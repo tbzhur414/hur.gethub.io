@@ -1,0 +1,350 @@
+/* Reset default browser margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 50%, #2a5298 50%);
+    color: #fff;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Home section */
+.home {
+    display: flex;
+    height: calc(100vh - 80px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section {
+    flex-basis: 100%;
+    text-align: left;
+}
+.top-left {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+/* Styling for "Portfolio" text */
+.portfolio-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(45deg, #ff0000, #cbd53a); /* Gradient color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.right-section {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.profile-picture {
+    padding-right: 100px;
+    width: 400px;
+    height: 500px;
+    border-radius: 0;
+    background-color: transparent;
+    
+}
+
+/* Name and profession styling */
+h1 {
+    font-size: 3em;
+}
+h3{
+    font-size: 1.8em;
+    padding: calc();
+}
+
+#profession {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #2a5298; /* Background color for the section */
+    color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+    padding: 170px 200px;
+    background-color: #1e3c72; /* Background color for the section */
+    color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #2a5298; /* Background color for the section */
+    color: #fff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skill-item {
+    margin: 20px 0;
+}
+
+.skill-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.skill-item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 230px 230px;
+    background-color: #1e3c72; /* Background color for the section */
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media .social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media .social-icon:hover {
+    color: #00d2ff; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info p {
+        font-size: 1em;
+    }
+
+    .social-media .social-icon {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-section {
+        margin-top: 20px;
+    }
+}
+/* Footer Styling */
+/* Footer Styling */
+/* Footer Styling */
+.footer {
+    padding: 40px 20px;
+    background-color: #0a1f3a; /* Updated background color for the footer */
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px; /* Ensure a minimum width for responsiveness */
+}
+
+.footer-section h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media-footer .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-icon.facebook {
+    color: #1877f2; /* Facebook blue */
+}
+
+.social-icon.instagram {
+    color: #e4405f; /* Instagram pink */
+}
+
+.social-icon.x {
+    color: #1d9bf0; /* X (formerly Twitter) blue */
+}
+
+.social-icon.whatsapp {
+    color: #25d366; /* WhatsApp green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
